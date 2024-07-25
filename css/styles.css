@@ -1,0 +1,148 @@
+body {
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    background-image: url(/img/wallpapersden.com_tiny-tina-s-wonderlands-4k-night-background_2560x1080.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, rgb(63, 4, 68) 0%, rgb(29, 27, 27) 35%, rgba(25, 1, 29, 1) 100%);
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.menu,
+.icon,
+.burgerMenu {
+    min-width: 100px;
+    min-height: 70px;
+    background: transparent;
+
+    float: left;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    list-style-type: none;
+    float: left;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu ul :hover {
+    color: rgb(231, 80, 231);
+    background-color: blueviolet;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(255, 90, 247);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.icon a {
+    color: rgb(255, 90, 247);
+
+}
+
+
+
+.MobileNav {
+    width: 100%;
+    min-height: 70px;
+    background: linear-gradient(90deg, rgb(63, 4, 68) 0%, rgb(29, 27, 27) 35%, rgba(25, 1, 29, 1) 100%);
+    float: left;
+    display: none;
+    position: relative;
+
+}
+
+.right {
+    float: right;
+}
+
+.menuDesign {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.MobileNavMenu {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(7, 2, 45);
+    float: left;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.MobileNavMenuDeactivate {
+    top: 70px;
+}
+
+.MobileNavMenu ul {
+    padding: 0px;
+}
+
+.MobileNavMenu li {
+    width: 100%;
+    min-height: 50px;
+    float: left;
+    margin: 2px 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .MobileNav {
+        display: block;
+    }
+}
