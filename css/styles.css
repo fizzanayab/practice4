@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     background-color: antiquewhite;
@@ -104,22 +104,25 @@ body {
 .MobileNavMenu {
     width: 100%;
     min-height: 100vh;
-    background: rgb(7, 2, 45);
+    background: linear-gradient(90deg, rgb(82, 6, 88) 0%, rgb(37, 34, 34) 35%, rgb(42, 2, 49) 100%);
     float: left;
     position: fixed;
-    top: -100%;
-    left: 0px;
+    top: 0px;
+    right: -100%;
     transition: 0.5s;
     z-index: -1;
 }
 
 .MobileNavMenuDeactivate {
-    top: 70px;
+    right: 0px;
 }
 
 .MobileNavMenu ul {
     padding: 0px;
+
 }
+
+
 
 .MobileNavMenu li {
     width: 100%;
@@ -136,6 +139,41 @@ body {
 
 }
 
+.MobileNavMenu ul :hover {
+    color: rgb(231, 80, 231);
+    background-color: blueviolet;
+}
+
+.fa-times {
+    float: left;
+    display: none;
+}
+
+.Xicon {
+    display: block;
+}
+
+.baricon {
+    display: none;
+}
+
+.box1 {
+    height: 300px;
+    background-color: rgb(241, 186, 241);
+    border-radius: 10px;
+    float: left;
+    position: absolute;
+    top: 70px;
+    z-index: -5;
+    margin: 20px; 
+    margin-right:10px ;
+    background-image: url(/img/Best-Survival-Games-VG247.webp);
+    background-size: cover;
+   box-shadow: 10px 10px 5px rgb(63, 14, 61);
+
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .navbar {
@@ -145,4 +183,16 @@ body {
     .MobileNav {
         display: block;
     }
+
+    
+
 }
+
+@media only screen and (min-width: 768px) {
+  .box1{
+   min-height:400px ;
+  }
+    
+
+}
+
