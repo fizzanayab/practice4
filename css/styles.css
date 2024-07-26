@@ -4,7 +4,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: antiquewhite;
-    background-image: url(/img/wallpapersden.com_tiny-tina-s-wonderlands-4k-night-background_2560x1080.jpg);
+    background-image: url(../img/wallpapersden.com_tiny-tina-s-wonderlands-4k-night-background_2560x1080.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -167,7 +167,7 @@ body {
     z-index: -5;
     margin: 20px; 
     margin-right:10px ;
-    background-image: url(/img/Best-Survival-Games-VG247.webp);
+    background-image: url(../img/Best-Survival-Games-VG247.webp);
     background-size: cover;
    box-shadow: 10px 10px 5px rgb(63, 14, 61);
 
